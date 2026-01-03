@@ -14,7 +14,7 @@ export const camera = new THREE.PerspectiveCamera(
 camera.position.z = 100;
 
 export const renderer = new THREE.WebGLRenderer({ antialias: true }); // true para melhorar as bordas
-
+//como não declarei cor fica a padrão
 renderer.setSize(window.innerWidth, window.innerHeight); //canvas size
 document.body.appendChild(renderer.domElement); //coloca o canva no html
 

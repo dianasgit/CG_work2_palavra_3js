@@ -12,7 +12,7 @@ loader.load(meuArquivoLocal, font => {
     const arrayLetras = [];
 
     const material = new THREE.MeshPhongMaterial({ //classe de aparência
-        color: 0xffc400,
+        color: 0xffc400,  //amarelo ouro
         shininess: 80
     });
 
@@ -50,10 +50,10 @@ loader.load(meuArquivoLocal, font => {
         xAtual += largura; // 
     });
 
-    // centraliza horizontalmente 
+    // centralizar a palavra
     const totalWidth = xAtual;
     palavraFinal.children.forEach(letraIndividual => {
-        letraIndividual.position.x -= totalWidth / 2; //assim move a palavra toda para a esq
+        letraIndividual.position.x -= totalWidth / 2; 
     });
 
     let flagMoverParaFrente = true;
